@@ -1,0 +1,68 @@
+{
+  "responses": [
+    {
+      "textAnnotations": [
+        {
+          "locale": "fr",
+          "description": "LE BIEN PUBLIC\nles dépeches\nPour Obama,\nla moutarde\nest\nde Dijon\n",
+          "boundingPoly": {
+            "vertices": [
+              {
+                "x": 146,
+                "y": 48
+              },
+              {
+                "x": 621,
+                "y": 48
+              },
+              {
+                "x": 621,
+                "y": 795
+              },
+              {
+                "x": 146,
+                "y": 795
+              }
+            ]
+          }
+        },
+        {
+          "description": "LE",
+          "boundingPoly": {
+            "vertices": [
+              {
+                "x": 146,
+                "y": 99
+              },
+              {
+                "x": 274,
+                "y": 85
+              },
+              {
+                "x": 284,
+                "y": 175
+              },
+              {
+                "x": 156,
+                "y": 189
+              }
+            ]
+          }
+        },
+        {
+          "description": "BIEN",
+          "boundingPoly": {
+            "vertices": [
+              {
+                "x": 292,
+                "y": 83
+              },
+              {
+                "x": 412,
+                "y": 70
+              },
+            }
+            ...
+      ]
+}]
+}

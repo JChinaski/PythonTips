@@ -1,0 +1,68 @@
+Function Listar
+{
+    Param
+    (
+        [string]$Direc
+    )
+    
+	$a = Get-ChildItem
+	foreach( $item in Get-ChildItem $Direc )
+	{
+		Write-Host $item
+		$w = "90E2BA4837AE1ED3B7E401B12B08E04F.TXT","90E2BA4837AE1ED3B7E401B12B2A404F.TXT","90E2BA4837AE1ED3B7E401B12B3DA04F.TXT"
+		$w -contains $item
+		If (($w -contains $item) -Match "True") {
+			Write-Host "We have the correct help file"
+			#Write-Host $Direc
+			$a = $Direc + "\" + $item
+			Write-Host $a
+			$largo = $a.length
+			$res = $a.substring(0, $largo -4)
+			Write-Host $res
+			$destino = $res+".pdf"
+			Write-Host $destino
+			
+			ConvertTo-PDFFile -Source $a -Destionation $destino;
+		}
+		
+	}
+}
+
+Function ConvertTo-PDFFile
+{
+    Param
+    (
+        [string]$Source,
+        [string]$Destionation
+    )
+
+    #Get the content of the file.
+    $Source = Get-Content $Source -Encoding UTF7;
+
+    #Required Word Variables.
+    $ExportFormat = 17;
+    $SaveOption = 0
+
+    #Create a hidden Word window.
+    $WordObject = New-Object -ComObject word.application;
+    $WordObject.Visible = $false;
+
+    #Add a Word document.
+    $DcoumentObject = $WordObject.Documents.Add();
+
+    #Put the text into the Word document.
+    $WordSelection = $WordObject.Selection;
+    $WordSelection.TypeText($Source);
+
+    #Set the page orientation to landscape.
+    $DcoumentObject.PageSetup.Orientation = 1;
+
+    #Export the PDF file and close without saving a Word document.
+    $DcoumentObject.ExportAsFixedFormat($Destionation,$ExportFormat);
+    $DcoumentObject.close([ref]$SaveOption);
+    $WordObject.Quit();
+}
+
+--
+Listar -Direc "C:\DERCO\Rar_Casos_Reclamos\Notas_Reclamos_Prd\Prueba_Archivo" 
+---

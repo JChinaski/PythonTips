@@ -1,0 +1,6 @@
+Directorio encontrado:.	Archivos.py
+Directorio encontrado:.	ashero.txt
+Directorio encontrado:.	Basicos.py
+Directorio encontrado:.\Doc	ANEXOS.txt
+Directorio encontrado:.\Doc	ArchivoEscritura.txt
+Directorio encontrado:.\Doc	ej_csv.csv

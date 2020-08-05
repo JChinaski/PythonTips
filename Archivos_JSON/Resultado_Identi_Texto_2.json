@@ -1,0 +1,90 @@
+{
+  "entities": [
+    {
+      "name": "despatches",
+      "type": "OTHER",
+      "metadata": {},
+      "salience": 0.31271625,
+      "mentions": [
+        {
+          "text": {
+            "content": "despatches",
+            "beginOffset": 20
+          },
+          "type": "COMMON"
+        }
+      ]
+    },
+    {
+      "name": "PUBLIC GOOD",
+      "type": "OTHER",
+      "metadata": {
+        "mid": "/m/017bkk",
+        "wikipedia_url": "https://en.wikipedia.org/wiki/Public_good"
+      },
+      "salience": 0.28040817,
+      "mentions": [
+        {
+          "text": {
+            "content": "PUBLIC GOOD",
+            "beginOffset": 4
+          },
+        {
+          "type": "PROPER"
+        }
+      ]
+    },
+    {
+      "name": "Obama",
+      "type": "PERSON",
+      "metadata": {
+        "wikipedia_url": "https://en.wikipedia.org/wiki/Barack_Obama",
+        "mid": "/m/02mjmr"
+      },
+      "salience": 0.19405179,
+      "mentions": [
+        {
+          "text": {
+            "content": "Obama",
+            "beginOffset": 35
+          },
+          "type": "PROPER"
+        }
+      ]
+    },
+    {
+      "name": "mustard",
+      "type": "OTHER",
+      "metadata": {},
+      "salience": 0.11838918,
+      "mentions": [
+        {
+          "text": {
+            "content": "mustard",
+            "beginOffset": 46
+          },
+          "type": "COMMON"
+        }
+      ]
+    },
+    {
+      "name": "Dijon",
+      "type": "LOCATION",
+      "metadata": {
+        "mid": "/m/0pbhz",
+        "wikipedia_url": "https://en.wikipedia.org/wiki/Dijon"
+      },
+      "salience": 0.09443461,
+      "mentions": [
+        {
+          "text": {
+            "content": "Dijon",
+            "beginOffset": 62
+          },
+          "type": "PROPER"
+        }
+      ]
+    }
+  ],
+  "language": "en"
+}
