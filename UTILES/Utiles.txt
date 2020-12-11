@@ -1,0 +1,4 @@
+#UTILES
+#https://uniwebsidad.com/libros/python/capitulo-6/metodos-de-formato
+#http://decodigo.com/python
+#pip install XlsxWriter
